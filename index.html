@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Stopwatch</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+
+    <div class="background">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <!-- Main Container -->
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <h1>
+                ⏱ Stopwatch
+            </h1>
+
+            <button id="themeBtn">
+               🌙
+            </button>
+
+        </div>
+
+        <!-- Stopwatch -->
+
+        <div class="timer-wrapper">
+
+            <div class="neon-ring"></div>
+
+            <svg
+                class="progress-ring"
+                width="320"
+                height="320">
+
+                <circle
+                    class="progress-bg"
+                    cx="160"
+                    cy="160"
+                    r="140">
+                </circle>
+
+                <circle
+                    id="progress"
+                    class="progress-circle"
+                    cx="160"
+                    cy="160"
+                    r="140">
+                </circle>
+
+            </svg>
+
+            <div
+                id="display"
+                class="timer">
+
+                00:00:00.00
+
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+
+        <div class="buttons">
+
+            <button
+                id="startBtn"
+                class="start">
+
+                Start
+
+            </button>
+
+            <button
+                id="pauseBtn"
+                class="pause">
+
+                Pause
+
+            </button>
+
+            <button
+                id="lapBtn"
+                class="lap">
+
+                Lap
+
+            </button>
+
+            <button
+                id="resetBtn"
+                class="reset">
+
+                Reset
+
+            </button>
+
+            <button
+                id="exportBtn"
+                class="export">
+
+                Export
+
+            </button>
+
+        </div>
+
+        <!-- Lap Records -->
+
+        <div class="lap-container">
+
+            <h2>
+                Lap Records
+            </h2>
+
+            <ul id="laps"></ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
